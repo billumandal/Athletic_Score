@@ -1,0 +1,21 @@
+from django import forms
+
+class SocreForm(forms.Form):
+    name = forms.CharField(max_lenght=50, attrs={'wrap'='virtual', 'name'='player_name', 'id'='player_name', 'class'='box-text',})
+    gender = forms.CharField(max_lenght=6, attrs={'wrap'='virtual', 'name'='gender', 'id'='gender', 'class'='box-text',})
+    m100 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='100m', 'class'='box-text',})
+    m200 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='200m', 'class'='box-text',})
+    m400 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='400m', 'class'='box-text',})
+    m800 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='400m', 'class'='box-text',})
+    m1500 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='1500m', 'class'='box-text',})
+    mH100 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='110mH', 'class'='box-text',})
+    mH110 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='110mH', 'class'='box-text',})
+    high_jump = forms.IntegerField(attrs={'wrap'='virtual', 'name'='jumps', 'id'='high_jump', 'class'='box-text',})
+    pole_vault = forms.IntegerField(attrs={'wrap'='virtual', 'name'='jumps', 'id'='pole_vault', 'class'='box-text',})
+    long_jump = forms.IntegerField(attrs={'wrap'='virtual', 'name'='jumps', 'id'='long_jump', 'class'='box-text',})
+    shot = forms.IntegerField(attrs={'wrap'='virtual', 'name'='throws', 'id'='shot', 'class'='box-text',})
+    discus = forms.IntegerField(attrs={'wrap'='virtual', 'name'='throws', 'id'='discus', 'class'='box-text',})
+    javelin = forms.IntegerField(attrs={'wrap'='virtual', 'name'='throws', 'id'='javelin', 'class'='box-text',})
+    m60 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='60m', 'class'='box-text',})
+    m1000 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='1000m', 'class'='box-text',})
+    mH60 = forms.IntegerField(attrs={'wrap'='virtual', 'name'='track_events', 'id'='60mH', 'class'='box-text',})
